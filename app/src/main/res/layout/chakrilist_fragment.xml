@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".chakrilist_fragment">
+
+    <SearchView
+        android:id="@+id/chakrisearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/search_bg"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chakrilist"
+        android:layout_below="@+id/chakrisearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
+        android:id="@+id/noresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chakrisearch"
+        app:lottie_rawRes="@raw/no_result"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        />
+
+</RelativeLayout>

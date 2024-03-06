@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:id="@+id/orginaztionclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            >
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/companyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#262626"
+                />
+            <TextView
+                android:id="@+id/countjob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Job : 100"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#262626"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Jobs"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:background="#03A9F4"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

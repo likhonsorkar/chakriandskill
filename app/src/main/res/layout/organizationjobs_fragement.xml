@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".organizationjobs_fragement">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+         android:orientation="vertical">
+         <ImageView
+             android:id="@+id/mainlogo"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_gravity="center"
+             android:layout_marginTop="10dp"
+            />
+         <TextView
+             android:id="@+id/companyname"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Company Name"
+             android:gravity="center"
+             android:textSize="20sp"
+            />
+         <TextView
+             android:id="@+id/count"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Total Job: 121"
+             android:gravity="center"
+             android:textSize="20sp"
+             />
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/organizationjobsrecycle"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             />
+      </LinearLayout>
+
+</RelativeLayout>

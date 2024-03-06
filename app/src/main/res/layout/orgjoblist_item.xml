@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        app:cardCornerRadius="3dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/positionname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Job Position Name"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/vacancy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="শূন্যপদ: 100"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/kalpurush"
+                        />
+                    <TextView
+                        android:id="@+id/createdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="শুরুর তারিখঃ 11-02-24"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/kalpurush"
+                        />
+                    <TextView
+                        android:id="@+id/deadlinedate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="শেষ হবেঃ 06-01-25"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/kalpurush"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="আবেদন করুন"
+                android:fontFamily="@font/kalpurush"
+                android:textSize="18sp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="চাকরির বিস্তারিত দেখুন"
+                android:fontFamily="@font/kalpurush"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
